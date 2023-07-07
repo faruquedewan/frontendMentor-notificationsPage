@@ -88,8 +88,9 @@ span:hover {
     color: var(--blue);
 }
 
-.img-chess {
+#img-chess {
     cursor: pointer;
+    margin-left: auto;
 }
 
 .message {
