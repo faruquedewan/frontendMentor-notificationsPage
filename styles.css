@@ -1,0 +1,142 @@
+:root {
+    /* Primary */
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --veryLightGrayishBlue: hsl(210, 60%, 98%);
+    --lightGrayishBlue1: hsl(211, 68%, 94%);
+    --lightGrayishBlue2: hsl(205, 33%, 90%);
+    --grayishBlue: hsl(219, 14%, 63%);
+    --darkGrayishBlue: hsl(219, 12%, 42%);
+    --veryDarkBlue: hsl(224, 21%, 14%);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 643px;
+}
+
+h1, h2, p , small, span, a {
+    margin: 0;
+}
+
+/* Section Top */
+.section-top {
+    padding: 1.5rem 1rem;
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h1 span {
+    font-size: 1rem;
+    padding: .1rem .65rem;
+    margin-inline-start: .5rem;
+    background-color: var(--blue);
+}
+
+.section-top a {
+    font-size: .9rem;
+    text-decoration: none;
+    color: var(--darkGrayishBlue);
+}
+
+.section-top a:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+/* Section Bottom */
+.section-bottom {
+    padding: 0 1rem 2rem;
+    gap: .75rem;
+}
+
+.section-bottom > * {
+    padding: 1rem;
+}
+
+.section-bottom p {
+    font-size: .9rem;
+}
+
+.section-bottom p span {
+    padding-inline-start: .2rem;
+}
+
+h2 {
+    font-size: .9rem;
+    padding-inline-end: .2rem;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.chess {
+    color: var(--blue);
+}
+
+.img-chess {
+    cursor: pointer;
+}
+
+.message {
+    padding: 1rem;
+    margin-top: .75rem;
+}
+
+.message:hover {
+    cursor: pointer;
+    background-color: var(--lightGrayishBlue1);
+}
+
+small {
+    padding-top: .25rem;
+}
+
+.unread {
+    background-color: var(--veryLightGrayishBlue);
+    position: relative;
+}
+
+.unread p::after {
+    position: absolute;
+    content: "";
+    background-color: var(--red);
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    transform: translate(75%, 75%);
+}
+
+@media screen and (min-width:700px) {
+    body {
+        background-color: var(--veryLightGrayishBlue);
+    }
+
+    main {
+        background-color: white;
+        margin-block: 4rem;
+        box-shadow: 0 0 20px var(--lightGrayishBlue1);
+    }
+
+    .section-bottom, .section-top {
+        padding-inline: 1.5rem;
+    }
+
+    .section-bottom {
+        padding-bottom: 0;
+    }
+}
